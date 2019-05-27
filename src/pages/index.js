@@ -3,20 +3,29 @@ import styled from "styled-components";
 
 import "../styles/global.css";
 import Showcase from "../components/Showcase";
+import Background from "../components/Background";
 
-const Index = styled.div`
-  background-color: #cbc9ff;
-`;
+const Index = styled.div``;
 
 const Title = styled.h1`
-  color: #ea15bd;
+  color: #7ce1ed;
+  text-align: center;
+`;
+
+const Viewbox = styled.div`
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.25em;
+  position: relative;
   text-align: center;
 `;
 
 const IndexPage = () => (
   <Index>
-    <Title>Welcome To My Website</Title>
-    <Showcase />
+    <Background />
+    <Viewbox>
+      <Title>Welcome To My Website</Title>
+      <Showcase />
+    </Viewbox>
   </Index>
 );
 
