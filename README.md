@@ -1,4 +1,4 @@
-[![run tests status][https://github.com/bpas247/portfolio/workflows/run%20tests/badge.svg]][https://github.com/bpas247/portfolio/actions]
+[![run tests status][test-badge]][actions]
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
@@ -97,3 +97,6 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+[test-badge]: https://github.com/bpas247/portfolio/workflows/run%20tests/badge.svg
+[actions]: https://github.com/bpas247/portfolio/actions
