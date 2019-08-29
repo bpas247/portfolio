@@ -98,5 +98,5 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-[test-badge]: https://github.com/bpas247/portfolio/workflows/run%20tests/badge.svg
+[test-badge]: https://github.com/bpas247/portfolio/workflows/Run%20Tests/badge.svg
 [actions]: https://github.com/bpas247/portfolio/actions
