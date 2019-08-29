@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 import "../styles/global.css";
 import Showcase from "../components/Showcase";
-import Background from "../components/Background";
 
 const Index = styled.div``;
 
@@ -21,7 +20,6 @@ const Viewbox = styled.div`
 
 const IndexPage = () => (
   <Index>
-    <Background />
     <Viewbox>
       <Title>Welcome To My Website</Title>
       <Showcase />

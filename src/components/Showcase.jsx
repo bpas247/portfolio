@@ -1,5 +1,4 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
 import styled from "styled-components";
 
 const ShowcaseEntry = styled.div`
@@ -7,39 +6,15 @@ const ShowcaseEntry = styled.div`
   text-align: left;
 `;
 
-const Showcase = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      github {
-        viewer {
-          repositoriesContributedTo(first: 5) {
-            nodes {
-              name
-              homepageUrl
-              description
-              stargazers {
-                totalCount
-              }
-            }
-          }
-        }
-      }
-    }
-  `);
-
+const Showcase = ({ homepageUrl, name, description }) => {
   return (
     <>
-      {data
-        ? data.github.viewer.repositoriesContributedTo.nodes.map((node, i) => (
-            <ShowcaseEntry key={i}>
-              <h2 style={{ display: "inline" }}>
-                <a href={node.homepageUrl}>{node.name}</a>
-              </h2>
-              <h3 style={{ display: "inline" }}>{node.description}</h3>
-              <h4>stars: {node.stargazers.totalCount}</h4>
-            </ShowcaseEntry>
-          ))
-        : "Loading..."}
+      <ShowcaseEntry>
+        <h2>
+          <a href={homepageUrl}>{name}</a>
+        </h2>
+        <h3>{description}</h3>
+      </ShowcaseEntry>
     </>
   );
 };
