@@ -2227,7 +2227,7 @@ babel-preset-fbjs@^3.1.2:
     "@babel/plugin-transform-template-literals" "^7.0.0"
     babel-plugin-syntax-trailing-function-commas "^7.0.0-beta.0"
 
-babel-preset-gatsby@^0.2.18, babel-preset-gatsby@^0.2.20:
+babel-preset-gatsby@^0.2.20:
   version "0.2.20"
   resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-0.2.20.tgz#0ea93dab2a0d0e780e914e8d845021b670c53c17"
   integrity sha512-vKDeNhszAjTiHpgIyzLOxf9NCY9Jbw7k2yi6m4i9b9uPySCU19b/oRifYA0bC5cRj76vfoicSjykFGuwjj0Tyw==
@@ -5255,10 +5255,10 @@ gatsby-page-utils@^0.0.27:
     micromatch "^3.1.10"
     slash "^3.0.0"
 
-gatsby-plugin-offline@^3.0.14:
-  version "3.0.14"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.0.14.tgz#56021724d0ffb5de3b70ed3de873c4d9dcd80e0e"
-  integrity sha512-eMCw2mD2mr77xck/6/0EV6wO5rcXPk+kkQyiw8lgqx4eJ5AFmUp1U6FEVibFjm8yqvDlA9ldhvtxFKQSaQPNAQ==
+gatsby-plugin-offline@^3.0.16:
+  version "3.0.16"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.0.16.tgz#5629fd36b42673ce9f703b289f96f43f60d3914f"
+  integrity sha512-OM8zdPet5vWy17jW8gcUWoOh/MdfXfT8zuPKgeiO32ESryoEQsQW7gZSKBSaXutyApS+ndLtNxygDwm7Ma1anA==
   dependencies:
     "@babel/runtime" "^7.6.3"
     cheerio "^1.0.0-rc.3"
