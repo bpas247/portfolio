@@ -1,9 +1,14 @@
 import React from "react";
 import { Navbar } from "./";
+import styled from "@emotion/styled";
+
+const StyledLayout = styled.div`
+  color: white;
+`;
 
 export default ({ children }) => (
-  <div>
+  <StyledLayout>
     <Navbar />
     {children}
-  </div>
+  </StyledLayout>
 );
