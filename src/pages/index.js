@@ -1,10 +1,8 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 import "../styles/global.css";
-import Showcase from "../components/Showcase";
-
-const Index = styled.div``;
+import { Layout } from "../components";
 
 const Title = styled.h1`
   color: #7ce1ed;
@@ -18,13 +16,14 @@ const Viewbox = styled.div`
   text-align: center;
 `;
 
-const IndexPage = () => (
-  <Index>
+export default () => (
+  <Layout>
     <Viewbox>
-      <Title>Welcome To My Website</Title>
-      <Showcase />
+      <Title>Welcome To My Website :)</Title>
+      <div>
+        I am a passionate front-end developer and open-source contributor, with
+        a focus in React development.
+      </div>
     </Viewbox>
-  </Index>
+  </Layout>
 );
-
-export default IndexPage;
