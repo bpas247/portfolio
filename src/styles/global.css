@@ -1,8 +1,27 @@
 body {
   font-family: monospace;
-  background-image: linear-gradient(
-    to right,
-    rgb(77, 77, 255),
-    rgb(255, 77, 255)
-  );
+  background: rgb(28, 9, 121);
+  background: linear-gradient(
+      191deg,
+      rgba(28, 9, 121, 1) 39%,
+      rgba(0, 245, 255, 1) 100%
+    )
+    fixed;
+  /* rgb(255, 77, 255) */
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+body {
+  font-size: 16px;
 }

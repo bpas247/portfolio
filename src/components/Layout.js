@@ -1,14 +1,29 @@
 import React from "react";
 import { Navbar } from "./";
 import styled from "@emotion/styled";
+import { ThemeProvider } from "emotion-theming";
 
-const StyledLayout = styled.div`
-  color: white;
-`;
+const theme = {
+  colors: {
+    text: "white"
+  }
+};
 
-export default ({ children }) => (
-  <StyledLayout>
+const Layout = ({ children }) => (
+  <ThemeProvider theme={theme}>
     <Navbar />
     {children}
-  </StyledLayout>
+  </ThemeProvider>
 );
+
+Layout.Title = styled.h1`
+  color: ${props => props.theme.colors.text};
+  text-align: center;
+`;
+
+Layout.Subtitle = styled.h2`
+  color: ${props => props.theme.colors.text};
+  text-align: center;
+`;
+
+export default Layout;
