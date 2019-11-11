@@ -29,7 +29,7 @@
     "@testing-library/jest-dom": "^4.2.3",
     "@testing-library/react": "^9.3.2",
     "babel-jest": "^24.9.0",
-    "babel-preset-gatsby": "^0.2.20",
+    "babel-preset-gatsby": "^0.2.21",
     "husky": "^3.0.9",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
