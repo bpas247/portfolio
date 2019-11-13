@@ -16,7 +16,7 @@
     "gatsby": "^2.17.11",
     "gatsby-image": "^2.2.32",
     "gatsby-plugin-emotion": "^4.1.14",
-    "gatsby-plugin-offline": "^3.0.19",
+    "gatsby-plugin-offline": "^3.0.20",
     "gatsby-plugin-react-helmet": "^3.1.14",
     "gatsby-source-filesystem": "^2.1.36",
     "react": "^16.11.0",
