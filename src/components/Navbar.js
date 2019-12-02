@@ -1,16 +1,12 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui";
-import { Link as FunctionLink } from "gatsby";
+import React from "react";
+import { Link } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTools, faScroll } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { Flex, NavLink } from "@theme-ui/components";
 
-const StyledNav = props => <Flex {...props} />;
+const StyledNav = props => <div {...props} />;
 
-const StyledLink = props => (
-  <NavLink {...props} sx={{ px: 2, color: "text" }} as={FunctionLink} />
-);
+const StyledLink = props => <Link {...props} />;
 
 export default () => (
   <StyledNav>

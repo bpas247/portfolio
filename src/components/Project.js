@@ -1,29 +1,23 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui";
-import { Heading, Text, Card } from "@theme-ui/components";
+import React from "react";
 
-const StyledProject = props => <Card {...props} />;
+const StyledProject = props => <div {...props} />;
 
 const Project = ({ name, maintainer, children }) => (
   <StyledProject>
-    <Heading color="text" as="h3" fontSize={[3, 4, 5]}>
+    <h3>
       {name} | {maintainer ? "Maintainer" : "Contributor"}
-    </Heading>
+    </h3>
     {children}
   </StyledProject>
 );
 
 Project.Summary = ({ children }) => (
-  <Text color="text" fontSize={[2, 3, 4]}>
+  <p>
     {children}
     <hr />
-  </Text>
+  </p>
 );
 
-Project.Contributions = ({ children }) => (
-  <Text color="text" fontSize={[2, 3, 4]}>
-    {children}
-  </Text>
-);
+Project.Contributions = ({ children }) => <p>{children}</p>;
 
 export default Project;
