@@ -21,7 +21,8 @@
     "gatsby-source-filesystem": "^2.1.35",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "rebass": "^4.0.7"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",

@@ -1,27 +1,28 @@
 import React from "react";
-import styled from "@emotion/styled";
+import { Box, Heading, Text, Card } from "rebass";
 
-const StyledProject = styled.div`
-  color: ${props => props.theme.colors.text};
-  background: black;
-  width: 75%;
-  margin: auto;
-  border-radius: 6px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 0 0 5px 15px;
-`;
+const StyledProject = props => <Card {...props} width={3 / 4} />;
 
 const Project = ({ name, maintainer, children }) => (
   <StyledProject>
-    <h3>
+    <Heading color="text" as="h3" fontSize={[3, 4, 5]}>
       {name} | {maintainer ? "Maintainer" : "Contributor"}
-    </h3>
+    </Heading>
     {children}
   </StyledProject>
 );
 
-Project.Summary = ({ children }) => <h4>{children}</h4>;
+Project.Summary = ({ children }) => (
+  <Text color="text" fontSize={[2, 3, 4]}>
+    {children}
+    <hr />
+  </Text>
+);
 
-Project.Contributions = ({ children }) => <div>{children}</div>;
+Project.Contributions = ({ children }) => (
+  <Text color="text" fontSize={[2, 3, 4]}>
+    {children}
+  </Text>
+);
 
 export default Project;

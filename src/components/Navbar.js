@@ -1,19 +1,17 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link as FunctionLink } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTools, faScroll } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import styled from "@emotion/styled";
+import { Flex, Link } from "rebass";
 
-const StyledNav = styled.nav`
-  display: flex;
-  justify-content: center;
-`;
+const StyledNav = props => (
+  <Flex {...props} px={2} sx={{ display: "flex", justifyContent: "center" }} />
+);
 
-const StyledLink = styled(Link)`
-  color: ${props => props.theme.colors.text};
-  padding-right: 25px;
-`;
+const StyledLink = props => (
+  <Link {...props} color="text" as={FunctionLink} variant="nav" />
+);
 
 export default () => (
   <StyledNav>
