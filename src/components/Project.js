@@ -1,7 +1,8 @@
-import React from "react";
-import { Box, Heading, Text, Card } from "rebass";
+/** @jsx jsx */
+import { jsx } from "theme-ui";
+import { Heading, Text, Card } from "@theme-ui/components";
 
-const StyledProject = props => <Card {...props} width={3 / 4} />;
+const StyledProject = props => <Card {...props} />;
 
 const Project = ({ name, maintainer, children }) => (
   <StyledProject>

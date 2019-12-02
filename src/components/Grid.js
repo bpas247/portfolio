@@ -1,11 +1,10 @@
 import React from "react";
-import { Box } from "rebass";
+import { Grid } from "@theme-ui/components";
 
 export default props => (
-  <Box
+  <Grid
     {...props}
     sx={{
-      display: "grid",
       gridGap: 3
     }}
   />
