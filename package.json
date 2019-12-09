@@ -10,7 +10,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
-    "@fortawesome/react-fontawesome": "^0.1.7",
+    "@fortawesome/react-fontawesome": "^0.1.8",
     "dotenv": "^8.2.0",
     "emotion-theming": "^10.0.19",
     "gatsby": "^2.18.7",
