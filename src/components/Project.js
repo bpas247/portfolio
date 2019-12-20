@@ -1,23 +1,19 @@
 import React from "react";
-
-const StyledProject = props => <div {...props} />;
+import styled from "@emotion/styled";
 
 const Project = ({ name, maintainer, children }) => (
-  <StyledProject>
+  <>
     <h3>
       {name} | {maintainer ? "Maintainer" : "Contributor"}
     </h3>
     {children}
-  </StyledProject>
+  </>
 );
 
-Project.Summary = ({ children }) => (
-  <p>
-    {children}
-    <hr />
-  </p>
-);
+Project.Summary = ({ children }) => <p>{children}</p>;
 
-Project.Contributions = ({ children }) => <p>{children}</p>;
+Project.Contributions = styled.div`
+  padding-bottom: 5%;
+`;
 
 export default Project;

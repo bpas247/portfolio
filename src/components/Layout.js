@@ -1,15 +1,33 @@
 import React from "react";
 import { Navbar } from "./";
+import styled from "@emotion/styled";
+
+const StyledLayout = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+`;
+
+export const Section = styled.div`
+  margin: auto;
+  padding-left: 5%;
+`;
 
 const Layout = ({ children }) => (
   <>
     <Navbar />
-    {children}
+    <StyledLayout>
+      <Section>{children}</Section>
+    </StyledLayout>
   </>
 );
 
-Layout.Title = props => <h1 {...props} />;
+Layout.Title = styled.h1`
+  text-align: center;
+  margin: auto;
+`;
 
-Layout.Subtitle = props => <h2 {...props} />;
+Layout.Subtitle = styled.h2`
+  text-align: center;
+`;
 
 export default Layout;
