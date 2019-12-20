@@ -1,36 +1,42 @@
 import React from "react";
-import { Link } from "gatsby";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTools, faScroll } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import styled from "@emotion/styled";
+import { Link as BaseLink } from "gatsby";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTools, faHome } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const StyledNav = styled.nav`
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  margin-right: 5px;
+  // border-style: solid;
 `;
 
+const Link = ({ to, ...props }) =>
+  to ? <BaseLink to={to} {...props} /> : <a {...props} />;
+
 const StyledLink = styled(Link)`
-  color: ${props => props.theme.colors.text};
-  padding-right: 25px;
+  margin-right: 10px;
+  // border-style: solid;
 `;
 
 export default () => (
   <StyledNav>
     <StyledLink to="/">
-      <FontAwesomeIcon size="lg" icon={faGithub} />
-      <br />
+      <FontAwesomeIcon size="lg" icon={faHome} />
       Home
     </StyledLink>
     <StyledLink to="/projects">
       <FontAwesomeIcon size="lg" icon={faTools} />
-      <br />
       Projects
     </StyledLink>
-    <StyledLink to="/resume">
-      <FontAwesomeIcon size="lg" icon={faScroll} />
-      <br />
-      Resume
+    <StyledLink href="https://github.com/bpas247">
+      <FontAwesomeIcon size="lg" icon={faGithub} />
+      GitHub
+    </StyledLink>
+    <StyledLink href="https://www.linkedin.com/in/brady-pascoe-3bba6b13a/">
+      <FontAwesomeIcon size="lg" icon={faLinkedin} />
+      LinkedIn
     </StyledLink>
   </StyledNav>
 );
