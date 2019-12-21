@@ -16,7 +16,7 @@ const Link = ({ to, ...props }) =>
 
 const StyledLink = styled(Link)`
   margin-right: 10px;
-  color: #623cea;
+  color: #aec5eb;
 `;
 
 export default () => (

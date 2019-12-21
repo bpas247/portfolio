@@ -18,7 +18,7 @@ const Project = ({ name, summary, maintainer, children }) => (
   <StyledProject>
     <StyledName>{name}</StyledName>
     <StyledSummary>{summary}</StyledSummary>
-    {maintainer ? "Maintainer" : "Contributor"}
+    <h5>{maintainer ? "Maintainer" : "Contributor"}</h5>
     {children}
   </StyledProject>
 );

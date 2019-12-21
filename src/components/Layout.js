@@ -5,7 +5,7 @@ import styled from "@emotion/styled";
 import "../styles/global.css";
 
 const StyledLayout = styled.div`
-  color: #000100;
+  color: #2c363f;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
