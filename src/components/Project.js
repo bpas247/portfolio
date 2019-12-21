@@ -1,33 +1,26 @@
 import React from "react";
 import styled from "@emotion/styled";
 
-const StyledProject = styled.div``;
-
-const StyledName = styled.h3`
-  width: 95%;
+const StyledProject = styled.div`
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  flex-flow: column wrap;
+  width: 50%;
+  margin-bottom: 5%;
 `;
 
-const StyledPosition = styled.span``;
+const StyledName = styled.h3`
+  align-self: center;
+`;
 
-const Project = ({ name, maintainer, children }) => (
+const StyledSummary = styled.h4``;
+
+const Project = ({ name, summary, maintainer, children }) => (
   <StyledProject>
-    <StyledName>
-      {name}{" "}
-      <StyledPosition>
-        {maintainer ? "Maintainer" : "Contributor"}
-      </StyledPosition>
-    </StyledName>
+    <StyledName>{name}</StyledName>
+    <StyledSummary>{summary}</StyledSummary>
+    {maintainer ? "Maintainer" : "Contributor"}
     {children}
   </StyledProject>
 );
-
-Project.Summary = ({ children }) => <p>{children}</p>;
-
-Project.Contributions = styled.div`
-  margin-bottom: 5%;
-`;
 
 export default Project;

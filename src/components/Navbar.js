@@ -9,7 +9,6 @@ const StyledNav = styled.nav`
   display: flex;
   justify-content: flex-end;
   margin-right: 5px;
-  // border-style: solid;
 `;
 
 const Link = ({ to, ...props }) =>
@@ -17,7 +16,7 @@ const Link = ({ to, ...props }) =>
 
 const StyledLink = styled(Link)`
   margin-right: 10px;
-  // border-style: solid;
+  color: #623cea;
 `;
 
 export default () => (

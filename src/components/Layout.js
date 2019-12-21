@@ -2,32 +2,26 @@ import React from "react";
 import { Navbar } from "./";
 import styled from "@emotion/styled";
 
-const StyledLayout = styled.div`
-  display: flex;
-  flex-flow: row wrap;
-`;
+import "../styles/global.css";
 
-export const Section = styled.div`
-  margin: auto;
-  padding-left: 5%;
+const StyledLayout = styled.div`
+  color: #000100;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 `;
 
 const Layout = ({ children }) => (
   <>
     <Navbar />
-    <StyledLayout>
-      <Section>{children}</Section>
-    </StyledLayout>
+    <StyledLayout>{children}</StyledLayout>
   </>
 );
 
-Layout.Title = styled.h1`
-  text-align: center;
-  margin: auto;
-`;
+Layout.Title = styled.h1``;
 
 Layout.Subtitle = styled.h2`
-  text-align: center;
+  margin-bottom: 5%;
 `;
 
 export default Layout;
