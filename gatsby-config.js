@@ -42,7 +42,8 @@ module.exports = {
       options: {
         defaultLayouts: {
           blog: require.resolve("./src/components/Layout.js")
-        }
+        },
+        remarkPlugins: [require("remark-emoji")]
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
