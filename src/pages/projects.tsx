@@ -1,5 +1,6 @@
 import React from "react";
-import { Layout, Project } from "../components";
+import Layout from "../components/Layout";
+import Project from "../components/Project";
 
 export default () => (
   <Layout>

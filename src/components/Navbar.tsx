@@ -11,8 +11,14 @@ const StyledNav = styled.nav`
   margin-right: 5px;
 `;
 
-const Link = ({ to, ...props }) =>
-  to ? <BaseLink to={to} {...props} /> : <a {...props} />;
+interface LinkProps {
+  to?: string;
+  href?: string;
+  children: React.ReactNode;
+}
+
+const Link = ({ to, href, children }: LinkProps) =>
+  to ? <BaseLink to={to}>{children}</BaseLink> : <a href={href}>{children}</a>;
 
 const StyledLink = styled(Link)`
   margin-right: 10px;

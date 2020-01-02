@@ -14,7 +14,14 @@ const StyledName = styled.h3`
 
 const StyledSummary = styled.h4``;
 
-const Project = ({ name, summary, maintainer, children }) => (
+interface ProjectProps {
+  name: string;
+  summary: string;
+  maintainer?: boolean;
+  children: React.ReactNode;
+}
+
+const Project = ({ name, summary, maintainer, children }: ProjectProps) => (
   <StyledProject>
     <StyledName>{name}</StyledName>
     <StyledSummary>{summary}</StyledSummary>
