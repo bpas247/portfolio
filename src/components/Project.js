@@ -4,7 +4,6 @@ import styled from "@emotion/styled";
 const StyledProject = styled.div`
   display: flex;
   flex-flow: column wrap;
-  width: 50%;
   margin-bottom: 5%;
 `;
 

@@ -8,7 +8,8 @@ const StyledLayout = styled.div`
   color: #2c363f;
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
+  padding-left: 25%;
+  padding-right: 25%;
 `;
 
 const Layout = ({ children }) => (
@@ -18,7 +19,9 @@ const Layout = ({ children }) => (
   </>
 );
 
-Layout.Title = styled.h1``;
+Layout.Title = styled.h1`
+  align-self: center;
+`;
 
 Layout.Subtitle = styled.h2`
   margin-bottom: 5%;

@@ -1,6 +1,6 @@
 import React from "react";
 import { Layout } from "../../components";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 
 export default ({
   data: {
@@ -10,9 +10,10 @@ export default ({
   <Layout>
     Here is a list of my blog posts
     <br />
-    {/* {JSON.stringify(data)} */}
     {edges.map(({ node }, i) => (
-      <>{node.frontmatter.title}</>
+      <Link key={i} to={node.frontmatter.path}>
+        {node.frontmatter.title}
+      </Link>
     ))}
   </Layout>
 );
@@ -24,6 +25,8 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             title
+            description
+            path
           }
         }
       }
