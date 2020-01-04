@@ -11,12 +11,10 @@ const StyledCard = styled.div`
 `;
 
 export default ({ img, title, date, path, children }) => (
-  // <Link to={path}>
   <StyledCard onClick={() => navigate(path)}>
     <Img fluid={img} />
     <h2>{title}</h2>
     <b>{date}</b>
     <p>{children}</p>
   </StyledCard>
-  // </Link>
 );
