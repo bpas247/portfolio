@@ -18,6 +18,8 @@ module.exports = {
         path: `${__dirname}/src/images`
       }
     },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
@@ -43,6 +45,7 @@ module.exports = {
         defaultLayouts: {
           blog: require.resolve("./src/components/Layout.js")
         },
+        gatsbyRemarkPlugins: [`gatsby-remark-prismjs`],
         remarkPlugins: [require("remark-emoji")]
       }
     }

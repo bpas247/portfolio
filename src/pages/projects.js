@@ -3,10 +3,8 @@ import { Layout, Project } from "../components";
 
 export default () => (
   <Layout>
-    <Layout.Title>Projects</Layout.Title>
-    <Layout.Subtitle>
-      This is a brief list of projects I maintain or contribute to.
-    </Layout.Subtitle>
+    <h1>Projects</h1>
+    <h2>This is a brief list of projects I maintain or contribute to.</h2>
     <Project
       name="React Bootstrap"
       summary="React Bootstrap is a complete re-implementation of Bootstrap components,
