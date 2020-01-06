@@ -18,10 +18,36 @@ module.exports = {
         path: `${__dirname}/src/images`
       }
     },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/pages/blog`
+      }
+    },
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/src/pages/blog`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        defaultLayouts: {
+          blog: require.resolve("./src/components/Layout.js"),
+          default: require.resolve("./src/components/Layout.js")
+        },
+        gatsbyRemarkPlugins: [`gatsby-remark-prismjs`],
+        remarkPlugins: [require("remark-emoji")]
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality

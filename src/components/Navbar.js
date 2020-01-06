@@ -2,7 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 import { Link as BaseLink } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTools, faHome } from "@fortawesome/free-solid-svg-icons";
+import { faTools, faHome, faBlog } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const StyledNav = styled.nav`
@@ -24,6 +24,10 @@ export default () => (
     <StyledLink to="/">
       <FontAwesomeIcon size="lg" icon={faHome} />
       Home
+    </StyledLink>
+    <StyledLink to="/blog">
+      <FontAwesomeIcon size="lg" icon={faBlog} />
+      Blog
     </StyledLink>
     <StyledLink to="/projects">
       <FontAwesomeIcon size="lg" icon={faTools} />

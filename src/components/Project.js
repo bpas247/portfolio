@@ -2,14 +2,12 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const StyledProject = styled.div`
-  display: flex;
-  flex-flow: column wrap;
-  width: 50%;
   margin-bottom: 5%;
+  max-width: 600px;
 `;
 
 const StyledName = styled.h3`
-  align-self: center;
+  text-align: center;
 `;
 
 const StyledSummary = styled.h4``;
