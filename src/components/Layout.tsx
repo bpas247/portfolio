@@ -11,7 +11,11 @@ const StyledLayout = styled.div`
   align-items: center;
 `;
 
-const Layout = ({ children }) => (
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+const Layout = ({ children }: LayoutProps) => (
   <>
     <Navbar />
     <StyledLayout>{children}</StyledLayout>

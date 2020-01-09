@@ -25,3 +25,5 @@ jobs:
         run: yarn install
       - name: Run Testing Suite
         run: yarn test
+      - name: Run TypeScript Check
+        run: yarn type-check
