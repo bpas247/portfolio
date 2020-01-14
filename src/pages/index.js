@@ -1,7 +1,7 @@
 import React from "react";
-import { Layout } from "../../components";
+import { Layout } from "../components";
 import { graphql } from "gatsby";
-import Card from "../../components/Card";
+import Card from "../components/Card";
 import styled from "@emotion/styled";
 
 const StyledList = styled.div`
@@ -17,7 +17,12 @@ export default ({
   }
 }) => (
   <Layout>
-    <h1>Here is a list of my blog posts</h1>
+    <h1>Welcome To My Website</h1>
+    <h2>
+      I am Brady Pascoe, an experienced mentor and developer who likes to build
+      dope web apps and contribute to open-sourced software.
+    </h2>
+    <h3>Here is a list of my blog posts</h3>
     <StyledList>
       {content.map(({ node }, i) => {
         const { title, date, description, path, image } = node.frontmatter;

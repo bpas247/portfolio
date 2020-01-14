@@ -16,7 +16,7 @@ const Link = ({ to, ...props }) =>
 
 const StyledLink = styled(Link)`
   margin-right: 10px;
-  color: #aec5eb;
+  color: #0496ff;
 `;
 
 export default () => (
@@ -24,10 +24,6 @@ export default () => (
     <StyledLink to="/">
       <FontAwesomeIcon size="lg" icon={faHome} />
       Home
-    </StyledLink>
-    <StyledLink to="/blog">
-      <FontAwesomeIcon size="lg" icon={faBlog} />
-      Blog
     </StyledLink>
     <StyledLink to="/projects">
       <FontAwesomeIcon size="lg" icon={faTools} />

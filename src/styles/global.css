@@ -1,10 +1,11 @@
 body {
-  background-color: #f2f5ea;
+  background-color: rgba(255, 0, 128, 0.08);
   margin: 0;
 }
 
 h1,
-h2 {
+h2,
+h3 {
   text-align: center;
 }
 
@@ -15,7 +16,7 @@ blockquote {
   quotes: "\201C""\201D""\2018""\2019";
 }
 blockquote:before {
-  color: #e75a7c;
+  color: #ff007f;
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;

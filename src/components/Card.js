@@ -4,7 +4,7 @@ import Img from "gatsby-image";
 import { navigate } from "gatsby";
 
 const StyledCard = styled.div`
-  background-color: #d4c5e2;
+  background-color: #ffbc42;
   max-width: 300px;
   cursor: pointer;
   padding: 1em;
