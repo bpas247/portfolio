@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from "@emotion/styled";
 import { Link as BaseLink } from "gatsby";
 import { motion } from "framer-motion";
-import ArrowCircle from "../images/arrow-circle.svg";
+import ArrowCircle from "../images/arrow-circle-left.svg";
 
 const StyledNavbar = styled.div`
   position: fixed;
@@ -32,10 +32,10 @@ const AnimatedNav = ({ show, ...props }) => (
 );
 
 const StyledImg = styled(motion.img)`
-  min-width: 120px;
-  min-height: 120px;
-  width: 2.5vw;
-  height: 2.5vh;
+  min-width: 60px;
+  min-height: 60px;
+  width: 10vw;
+  height: 10vh;
   float: right;
   cursor: pointer;
   filter: invert(14%) sepia(86%) saturate(6723%) hue-rotate(324deg)
@@ -43,8 +43,8 @@ const StyledImg = styled(motion.img)`
 `;
 
 const imgVariants = {
-  open: { scaleY: -1 },
-  close: { scaleY: 1 }
+  open: { scaleX: -1 },
+  close: { scaleX: 1 }
 };
 
 const AnimatedImg = ({ show, ...props }) => (
@@ -79,8 +79,8 @@ const StyledLink = styled(motion.custom(Link))`
 `;
 
 const linkVariants = {
-  open: { translateY: 0 },
-  close: { translateY: 150 }
+  open: { translateX: 0 },
+  close: { translateX: 150 }
 };
 
 const AnimatedLink = ({ show, index, ...props }) => {
