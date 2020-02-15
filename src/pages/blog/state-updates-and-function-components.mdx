@@ -1,0 +1,21 @@
+---
+title: "State Updates and Function Components"
+date: "2/12/2020"
+description: "An in-depth explanation on the behavior behind state updates with function components."
+path: "blog/state-updates-and-function-components"
+image: "blog-test.jpg"
+---
+
+# State Updates and Function Components
+
+After my [gist](https://gist.github.com/bpas247/e177a772b293025e5324219d231cf32c) on state updates being asynchronous,
+I felt like _certain_ details were lacking. This post is aimed to address these questions:
+
+- What actually makes them asynchronous?
+- Are they really asynchronous?
+- Why is the behavior this way?
+- Will it ever be synchronous?
+
+Let's start with some background information:
+
+## Closures

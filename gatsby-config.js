@@ -37,7 +37,7 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: {
-          blog: require.resolve("./src/components/Layout.js"),
+          blog: require.resolve("./src/components/BlogLayout.js"),
           default: require.resolve("./src/components/Layout.js")
         },
         gatsbyRemarkPlugins: [`gatsby-remark-prismjs`],
