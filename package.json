@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@babel/cli": "7.12.1",
-    "@babel/core": "7.12.1",
+    "@babel/core": "7.12.3",
     "@testing-library/jest-dom": "5.11.4",
     "@testing-library/react": "10.4.9",
     "babel-jest": "26.5.2",
