@@ -11,7 +11,7 @@
     "@fortawesome/free-brands-svg-icons": "5.15.3",
     "@fortawesome/free-solid-svg-icons": "5.15.3",
     "@fortawesome/react-fontawesome": "0.1.14",
-    "dotenv": "8.5.1",
+    "dotenv": "8.6.0",
     "gatsby": "2.32.13",
     "gatsby-image": "2.11.0",
     "gatsby-plugin-emotion": "4.5.0",
