@@ -22,8 +22,8 @@
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "react-helmet": "5.2.1",
-    "react-typography": "0.16.19",
-    "typography": "0.16.19"
+    "react-typography": "0.16.20",
+    "typography": "0.16.21"
   },
   "devDependencies": {
     "@babel/cli": "7.13.16",
