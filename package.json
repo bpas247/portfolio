@@ -21,7 +21,7 @@
     "gatsby-source-filesystem": "2.11.1",
     "react": "16.14.0",
     "react-dom": "16.14.0",
-    "react-helmet": "5.2.1",
+    "react-helmet": "6.1.0",
     "react-typography": "0.16.23",
     "typography": "0.16.21"
   },
