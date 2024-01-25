@@ -26,8 +26,8 @@
     "typography": "0.16.24"
   },
   "devDependencies": {
-    "@babel/cli": "7.21.0",
-    "@babel/core": "7.21.3",
+    "@babel/cli": "7.23.4",
+    "@babel/core": "7.23.7",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "10.4.9",
     "babel-jest": "26.6.3",
